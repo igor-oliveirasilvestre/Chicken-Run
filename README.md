@@ -1,8 +1,12 @@
 # Chicken Detection and Counting with YOLO Pretrained Model
+Detect chicken escaping our backyard into our front yard and send a notification to an application.
 
-
-
-
+# To-do List
+- Implement it on SCB
+- Capture data from live feed, ESP32CAM
+- Publish live info collected to an application, probably web.
+- Utilize better model, since Yolo detect "birds"
+- Maybe train a model to detect each chicken by its name, like [here](https://github.com/DennisFaucher/ChickenDetection).
 ## Introduction
 This project aims to detect and count chickens using the YOLO (You Only Look Once) pretrained model. The purpose is to monitor chicken enclosures and detect any instances of chickens attempting to escape.
 
