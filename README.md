@@ -1,5 +1,8 @@
 # Chicken Detection and Counting with YOLO Pretrained Model
 
+
+
+
 ## Introduction
 This project aims to detect and count chickens using the YOLO (You Only Look Once) pretrained model. The purpose is to monitor chicken enclosures and detect any instances of chickens attempting to escape.
 
@@ -7,17 +10,28 @@ This project aims to detect and count chickens using the YOLO (You Only Look Onc
 - Python 3.x
 - OpenCV
 - YOLO Pretrained Model
-<font color='red'>
+- numpy
+- ultralytics
+- cvzone
+- scikit-image
+- filterpy
+```diff
 - Add remaining prerequisites
- </font>
+```
 
 
 ## Installation
 1. Clone the repository:
-2. Install dependencies:
-<font color='red'>
-3. make a requisites.txt file
- </font>
+
+```
+git clone 
+```
+1. Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
 
 
 ## Usage
