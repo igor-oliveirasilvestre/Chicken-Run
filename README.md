@@ -3,10 +3,17 @@ Detect chicken escaping our backyard into our front yard and send a notification
 
 # To-do List
 - Implement it on SCB
-- Capture data from live feed, ESP32CAM
+- Capture data from live feed RTSP, ESP32CAM
 - Publish live info collected to an application, probably web.
 - Utilize better model, since Yolo detect "birds"
 - Maybe train a model to detect each chicken by its name, like [here](https://github.com/DennisFaucher/ChickenDetection).
+
+# Current chalenges
+- 2 chickens are so similar that the model struggles to differentiate them. 
+- These 2 chickens can and are probably being differentiated by their combs, but the color of the combs are "seasonal", when chickens are on their laying eggs season theirs combs are usually bright red, and grow rosier when broody.
+
+
+
 ## Introduction
 This project aims to detect and count chickens using the YOLO (You Only Look Once) pretrained model. The purpose is to monitor chicken enclosures and detect any instances of chickens attempting to escape.
 
