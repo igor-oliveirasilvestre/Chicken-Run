@@ -8,7 +8,7 @@ Detect chicken escaping our backyard into our front yard and send a notification
 - Utilize better model, since Yolo detect "birds"
 - Maybe train a model to detect each chicken by its name, like [here](https://github.com/DennisFaucher/ChickenDetection).
 
-# Current chalenges
+# Current challenges
 - 2 chickens are so similar that the model struggles to differentiate them. 
 - These 2 chickens can and are probably being differentiated by their combs, but the color of the combs are "seasonal", when chickens are on their laying eggs season theirs combs are usually bright red, and grow rosier when broody.
 
