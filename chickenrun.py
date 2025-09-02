@@ -10,6 +10,9 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import os
 import glob
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+
 
 # Lista de nomes das classes para a detecção de objetos
 labels = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
@@ -118,7 +121,7 @@ class VideoSelector:
             return
         
         self.selected_video = os.path.join("data", selected_video)
-        self.selected_model = "yolo11n.pt"  # Use default model
+        self.selected_model = "yolov8l.pt"  # Use default model
         self.save_data = self.save_data_var.get()  # Get checkbox value
         
         # Close the GUI and start detection
@@ -134,12 +137,12 @@ class VideoSelector:
 
 def main(video_path, yolo_model, use_gpu=True, save_data=False):
     # Check if required files exist
-    if not os.path.exists("mascara.png"):
-        print("Warning: mascara.png not found!")
+    if not os.path.exists("mask.png"):
+        print("Warning: mask.png not found!")
     if not os.path.exists("banner.png"):
         print("Warning: banner.png not found!")
-    
-    mask = cv2.imread("mascara.png")
+    mask_path = os.path.join(current_dir,"mask.png")
+    mask = cv2.imread(mask_path)
     cap = cv2.VideoCapture(video_path)
     
     if not cap.isOpened():
